@@ -1,0 +1,43 @@
+{
+    "name": "isaeken/thinks",
+    "version": "1.0",
+    "type": "library",
+    "description": "Many thinks.",
+    "homepage": "https://github.com/isaeken/thinks",
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "Isa Eken",
+            "email": "hello@isaeken.com.tr",
+            "homepage": "https://www.isaeken.com.tr",
+            "role": "Founder"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "IsaEken\\Thinks\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IsaEken\\Thinks\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.58"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.3"
+    }
+}
